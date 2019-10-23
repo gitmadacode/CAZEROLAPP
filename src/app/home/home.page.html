@@ -1,20 +1,21 @@
 <ion-header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <ion-toolbar>
-    <ion-title>
-      BandoriNoises APP
+    <ion-title color="primary">
+        Cazerola APP
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="background">
   
-  <ion-card-title color="primary">(n˘v˘•)¬Touch one member</ion-card-title>
+  <ion-card-title></ion-card-title>
   
   <ion-grid>
     <ion-row>
       <ion-col size="12" *ngFor="let instrumento of instrumentos">
-          <ion-card (click)="reproducirSonido(instrumento)">
-              <ion-img [src]="instrumento.imagen"></ion-img>
+          <ion-card (click) ="reproducirSonido(instrumento)">
+              <ion-img class="animated swing infinite" [src]="instrumento.imagen"></ion-img>
               
             </ion-card>
       </ion-col>
@@ -28,7 +29,7 @@
     
   <ion-footer>
       <ion-toolbar>
-        <ion-title>BandoriNoises</ion-title>
+        <ion-title>Cazerola APP</ion-title>
       </ion-toolbar>
     </ion-footer>
   

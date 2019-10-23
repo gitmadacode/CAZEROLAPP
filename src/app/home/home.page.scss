@@ -1,4 +1,25 @@
 ion-content.background{
-   --background: url(/assets/imagenes/background.png);
+   --background: url(/assets/imagenes/background.jpg);
     //
 }
+
+ion-card{
+    width: 300px;
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:black;
+  }
+
+
+  ion-header {
+   
+    color:black;
+  }
